@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Signed-in pages live under src/routes/_authenticated/ and read/write data directly with the browser client; access rules are enforced by row-level policies (owner-only ticks, shared-or-own visibility for habits/comments). Why: keeps privacy in the database, not the UI.
